@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.ud-hero__content {
+  padding: 30px;
+  background-color: #f7f7f7;
+  width: 60%;
+  margin-top: 5em;
+  margin-inline: auto;
+}
+@media (max-width: 767px) {
+  .ud-hero__content {
+    padding: 15px;
+    margin-top: 2em;
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ud-hero__content {
+    padding: 20px;
+    margin-top: 2em;
+    width: 80%;
+  }
+}
+.ud-hero__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .ud-hero__title {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ud-hero__title {
+    font-size: 3.5rem;
+  }
+}
+.ud-hero__text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .ud-hero__text {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ud-hero__text {
+    font-size: 2rem;
+  }
+}
+.ud-hero__btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.ud-hero__btn:hover {
+  background: #333;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .ud-hero__btn {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ud-hero__btn {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

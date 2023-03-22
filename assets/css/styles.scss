@@ -1,0 +1,89 @@
+$small_mobile:'(max-width: 767px)';
+$large_mobile: 'only screen and (min-width: 480px) and (max-width: 767px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$desktop: '(min-width: 1281px)';
+
+// Using https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.ud-hero {
+	&__content {
+		padding: 30px;
+		background-color: #f7f7f7;
+		width: 60%;
+		margin-top: 5em;
+		margin-inline: auto;
+		@media #{$small_mobile} {
+			padding: 15px;
+			margin-top: 2em;
+			width: 90%;
+		}
+		@media #{$tab_device} {
+			padding: 20px;
+			margin-top: 2em;
+			width: 80%;
+		}
+	}
+	&__title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 20px;
+		@media #{$small_mobile} {
+			font-size: 3rem;
+		}
+		@media #{$tab_device} {
+			font-size: 3.5rem;
+		}
+	}
+	&__text {
+		font-size: 1.5rem;
+		font-weight: 400;
+		line-height: 1.5;
+		margin-bottom: 20px;
+		@media #{$small_mobile} {
+			font-size: 1.8rem;
+		}
+		@media #{$tab_device} {
+			font-size: 2rem;
+		}
+	}
+	&__btn {
+		display: inline-block;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1.5;
+		padding: 10px 20px;
+		border: 1px solid #333;
+		border-radius: 5px;
+		transition: all 0.3s ease;
+		&:hover {
+			background: #333;
+			color: #fff;
+		}
+		@media #{$small_mobile} {
+			font-size: 1.8rem;
+		}
+		@media #{$tab_device} {
+			font-size: 2rem;
+		}
+	}
+}
